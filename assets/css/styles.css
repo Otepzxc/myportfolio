@@ -125,6 +125,8 @@ main{
   z-index: 1;
 }
 
+/*
+
 .bubbles{
   position: absolute;
   top: 0;
@@ -163,6 +165,7 @@ main{
       transform: translateY(-10vh) scale(1);
   }
 }
+*/
 
 body {
   margin: 0 0 var(--header-height) 0;
