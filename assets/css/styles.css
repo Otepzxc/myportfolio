@@ -109,6 +109,22 @@ body.dark-theme{
 html {
   scroll-behavior: smooth;
 }
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Reduce the z-index so it stays behind the content */
+  overflow: hidden;
+}
+
+main{
+  position: relative;
+  z-index: 1;
+}
+
 /*
 
 .bubbles{
