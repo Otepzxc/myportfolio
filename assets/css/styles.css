@@ -804,6 +804,80 @@ img {
   visibility: visible;
 }
 
+/*==================== video editor ====================*/
+a {
+  display: block; /* Change to block for full-width */
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  max-width: 200px; /* Optional: Set a max width for the button */
+  text-align: center; /* Center the text inside the button */
+  margin: 1.5rem auto; /* Center the button horizontally and add vertical spacing */
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--first-color-alt);
+}
+
+
+.section {
+  padding: 2rem 1rem; /* Padding for sections */
+  max-width: 1200px;  /* Max width for larger screens */
+  margin: 0 auto;     /* Center the section */
+}
+
+/* Title styles */
+.section__title {
+  text-align: center;  /* Center the title */
+  font-size: 2rem;     /* Font size for title */
+  margin-bottom: 1.5rem; /* Space below the title */
+}
+
+/* Container for video samples */
+.samples__container {
+  display: flex;         /* Use flexbox for layout */
+  flex-wrap: wrap;      /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 1.5rem;          /* Space between items */
+}
+
+/* Styles for individual video items */
+.sample__item {
+  background-color: #fff; /* White background for each item */
+  border-radius: 0.5rem;  /* Rounded corners */
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  overflow: hidden;       /* Ensure rounded corners work */
+  width: 100%;            /* Full width on small screens */
+  max-width: 400px;      /* Max width for larger screens */
+  text-align: center;     /* Center the text */
+}
+
+/* Video styling */
+video {
+  width: 100%;            /* Make video responsive */
+  height: auto;          /* Maintain aspect ratio */
+}
+
+/* Description styling */
+.video__description {
+  margin: 1rem 0;       /* Space above and below the description */
+  font-size: 1rem;      /* Font size for description */
+  color: #555;          /* Dark gray color for text */
+}
+
+@media (max-width: 768px) {
+  .section__title {
+      font-size: 1.5rem; /* Smaller title font on mobile */
+  }
+
+  .video__description {
+      font-size: 0.9rem; /* Smaller description font on mobile */
+  }
+}
+
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: hidden;
