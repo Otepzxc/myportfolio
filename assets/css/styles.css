@@ -805,7 +805,7 @@ img {
 }
 
 /*==================== video editor ====================*/
-a {
+.backor {
   display: block; /* Change to block for full-width */
   background-color: var(--first-color);
   color: #fff;
@@ -818,7 +818,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.backor:hover {
   background-color: var(--first-color-alt);
 }
 
