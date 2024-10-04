@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Video Container */
+.samples__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+/* Video Styling */
+video {
+    border: 2px solid #666;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 800px; /* Max width for larger screens */
+    height: auto;
+}
+
+/* Link Back to Home */
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #666;
+}
+
+/* =================== Responsive Design =================== */
+
+/* For tablets and smaller laptops (max-width: 768px) */
+@media (max-width: 768px) {
+    .section__title {
+        font-size: 1.7rem;
+    }
+
+    video {
+        max-width: 90%; /* Reduce width on tablets */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .section__title {
+        font-size: 1.4rem;
+    }
+
+    video {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    a {
+        padding: 10px 20px;
+    }
+}

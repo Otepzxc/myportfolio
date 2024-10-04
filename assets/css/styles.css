@@ -739,7 +739,7 @@ img {
 .services__button:hover .button__icon{
   transform: translateX(.25rem);
 }
-
+ 
 .services__modal {
   position: fixed;
   top: 0;
