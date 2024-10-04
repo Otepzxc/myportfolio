@@ -78,7 +78,7 @@ a:hover {
 .sample__item {
     background-color: #fff; /* White background for each item */
     border-radius: 0.5rem;  /* Rounded corners */
-    box-shadow: 0 9px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
     overflow: hidden;       /* Ensure rounded corners work */
     width: 100%;            /* Full width on small screens */
     max-width: 400px;      /* Max width for larger screens */
