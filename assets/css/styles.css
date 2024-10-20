@@ -881,6 +881,101 @@ video {
   }
 }
 
+/*==================== WEB WORKS ====================*/
+/* Section styling */
+.gallery {
+  padding: 2rem 1rem; /* Padding for sections */
+  max-width: 1200px;  /* Max width for larger screens */
+  margin: 0 auto;     /* Center the section */
+}
+
+/* Title styles */
+.section__title {
+  text-align: center;  /* Center the title */
+  font-size: 2rem;     /* Font size for title */
+  margin-bottom: 1.5rem; /* Space below the title */
+}
+
+/* Container for gallery items */
+.gallery__container {
+  display: flex;         /* Use flexbox for layout */
+  flex-wrap: wrap;      /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 1.5rem;          /* Space between items */
+}
+
+/* Styles for individual gallery items */
+.gallery__item {
+  background-color: #fff; /* White background for each item */
+  border-radius: 0.5rem;  /* Rounded corners */
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  overflow: hidden;       /* Ensure rounded corners work */
+  width: 100%;            /* Full width on small screens */
+  max-width: 300px;      /* Max width for larger screens */
+  text-align: center;     /* Center the text */
+}
+
+/* Image styling */
+.gallery__item img {
+  width: 100%;            /* Make image responsive */
+  height: auto;          /* Maintain aspect ratio */
+}
+
+/* Description styling */
+.gallery__description {
+  margin: 1rem 0;       /* Space above and below the description */
+  font-size: 1rem;      /* Font size for description */
+  color: #555;          /* Dark gray color for text */
+}
+
+/*==================== GRAPHICS WORKS ====================*/
+/* Section styling */
+.graphics {
+  padding: 2rem 1rem; /* Padding for sections */
+  max-width: 1200px;  /* Max width for larger screens */
+  margin: 0 auto;     /* Center the section */
+}
+
+/* Title styles */
+.section__title {
+  text-align: center;  /* Center the title */
+  font-size: 2rem;     /* Font size for title */
+  margin-bottom: 1.5rem; /* Space below the title */
+}
+
+/* Container for gallery items */
+.graphics__container {
+  display: flex;         /* Use flexbox for layout */
+  flex-wrap: wrap;      /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 1.5rem;          /* Space between items */
+}
+
+/* Styles for individual gallery items */
+.graphics__item {
+  background-color: #fff; /* White background for each item */
+  border-radius: 0.5rem;  /* Rounded corners */
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+  overflow: hidden;       /* Ensure rounded corners work */
+  width: 100%;            /* Full width on small screens */
+  max-width: 300px;      /* Max width for larger screens */
+  text-align: center;     /* Center the text */
+}
+
+/* Image styling */
+.graphics__item img {
+  width: 100%;            /* Make image responsive */
+  height: auto;          /* Maintain aspect ratio */
+}
+
+/* Description styling */
+.graphics__description {
+  margin: 1rem 0;       /* Space above and below the description */
+  font-size: 1rem;      /* Font size for description */
+  color: #555;          /* Dark gray color for text */
+}
+
+
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
   overflow: hidden;
@@ -1300,6 +1395,9 @@ video {
   }
   .footer__copy{
     margin-top: 4.5rem;
+  }
+  .sample__item {
+    margin: 0 0.5rem;
   }
 }
 
