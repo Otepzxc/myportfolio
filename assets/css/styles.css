@@ -701,9 +701,11 @@ img {
 
 /*==================== SERVICES ====================*/
 .services__container {
+  display: grid; /* or flex */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
 }
+
 
 .services__content {
   position: relative;
@@ -751,7 +753,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
-  z-index: var(--z-modal);
+  z-index: 1000;
   opacity: 0; 
   visibility: hidden;
   transition: .3s;
@@ -765,8 +767,8 @@ img {
   width: 80vw; 
   max-width: 100%;  
   height: 70vh; 
-  max-height: 100%;
-  overflow: scroll;
+  max-height: 70vh;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
@@ -802,6 +804,7 @@ img {
 .active-modal {
   opacity: 1;
   visibility: visible;
+  z-index: 1000;
 }
 
 /*==================== video editor ====================*/

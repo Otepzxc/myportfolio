@@ -74,6 +74,7 @@ const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('.services__button'),
       modalClose = document.querySelectorAll('.services__modal-close')
 
+// Open modal
 let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
 }
@@ -84,6 +85,7 @@ modalBtns.forEach((modalBtn, i) => {
     })
 })
 
+// Close modal
 modalClose.forEach((modalClose) =>{
     modalClose.addEventListener('click', () =>{
         modalViews.forEach((modalView) =>{
@@ -91,6 +93,13 @@ modalClose.forEach((modalClose) =>{
         })
     })
 })
+
+// Close modal when clicking "Back to Services"
+document.querySelector('.backor').addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+        modalView.classList.remove('active-modal');
+    });
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio__container', {
