@@ -911,22 +911,56 @@ video {
   box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
   overflow: hidden;       /* Ensure rounded corners work */
   width: 100%;            /* Full width on small screens */
-  max-width: 300px;      /* Max width for larger screens */
+  max-width: 400px;      /* Max width for larger screens */
   text-align: center;     /* Center the text */
 }
 
 /* Image styling */
 .gallery__item img {
-  width: 100%;            /* Make image responsive */
+  width: 150%;            /* Make image responsive */
   height: auto;          /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
 }
 
-/* Description styling */
-.gallery__description {
-  margin: 1rem 0;       /* Space above and below the description */
-  font-size: 1rem;      /* Font size for description */
-  color: #555;          /* Dark gray color for text */
+.gallery__item img:hover {
+  transform: scale(1.1);
 }
+
+/* Lightbox container (hidden by default) */
+.lightbox {
+  display: none;           /* Hidden by default */
+  position: fixed;         /* Stay in place */
+  z-index: 999;            /* Sit on top of everything */
+  left: 0;
+  top: 0;
+  width: 100%;             /* Full width */
+  height: 100%;            /* Full height */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  text-align: center;
+}
+
+/* Lightbox image content */
+.lightbox-content {
+  max-width: 90%;          /* Image takes up 90% of the viewport width */
+  max-height: 90%;         /* Image takes up 90% of the viewport height */
+  border-radius: 0.5rem;   /* Optional: rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Optional: shadow effect */
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
 
 /*==================== GRAPHICS WORKS ====================*/
 /* Section styling */

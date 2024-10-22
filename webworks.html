@@ -11,23 +11,26 @@
         <h2 class="section__title">Web Design Samples</h2>
         <div class="gallery__container">
             <div class="gallery__item">
-                <img src="assets/img/sample1.jpg" alt="Sample Work 1">
-                <p class="gallery__description">Description of Sample Work 1</p>
+                <img src="assets/img/sample1.jpg" alt="Sample Work 1" id="galleryImage" onclick="openLightbox(this)">
             </div>
             <div class="gallery__item">
-                <img src="assets/img/sample2.jpg" alt="Sample Work 2">
-                <p class="gallery__description">Description of Sample Work 2</p>
+                <img src="assets/img/sample2.jpg" alt="Sample Work 2" id="galleryImage" onclick="openLightbox(this)">
             </div>
             <div class="gallery__item">
-                <img src="assets/img/sample3.jpg" alt="Sample Work 3">
-                <p class="gallery__description">Description of Sample Work 3</p>
+                <img src="assets/img/sample3.jpg" alt="Sample Work 3" id="galleryImage" onclick="openLightbox(this)">
             </div>
             <div class="gallery__item">
-                <img src="assets/img/sample4.jpg" alt="Sample Work 4">
-                <p class="gallery__description">Description of Sample Work 4</p>
+                <img src="assets/img/sample4.jpg" alt="Sample Work 4" id="galleryImage" onclick="openLightbox(this)">
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="lightboxImg">
             </div>
         </div>
         <a class="backor" href="index.html#services">Back to Services</a>
     </section>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

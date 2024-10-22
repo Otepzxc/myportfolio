@@ -184,3 +184,20 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== FULL SCREEN ====================*/ 
+// Function to open the lightbox with the clicked image
+function openLightbox(imageElement) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+  
+    lightbox.style.display = "flex"; // Show the lightbox
+    lightboxImg.src = imageElement.src; // Set the source of the lightbox image to the clicked image
+  }
+  
+  // Function to close the lightbox
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none"; // Hide the lightbox
+  }
+  
+  
