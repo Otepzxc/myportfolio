@@ -200,4 +200,12 @@ function openLightbox(imageElement) {
     document.getElementById("lightbox").style.display = "none"; // Hide the lightbox
   }
   
-  
+/*==================== video works ====================*/ 
+$(document).ready(function() {
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: ["close"], // Only keep the close button
+        video: {
+            autoStart: true // Start playing automatically
+        }
+    });
+});

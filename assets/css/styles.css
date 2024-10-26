@@ -829,7 +829,11 @@ img {
 }
 
 /*==================== VIDEO WORKS ====================*/
-.samples__section {
+
+.fancybox-button--play {
+  display: none !important;
+}
+.samples {
   padding: 2rem 1rem; /* Padding for sections */
   max-width: 1200px;  /* Max width for larger screens */
   margin: 0 auto;     /* Center the section */
@@ -867,6 +871,29 @@ video {
   height: auto;          /* Maintain aspect ratio */
 }
 
+.sample__item video {
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.sample__item:hover video {
+  transform: scale(1.1); /* Scale up the video */
+}
+
+.fancybox-button--close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Optional: Change color on hover */
+.fancybox-button--close:hover {
+  background-color: 0 8px 15px rgba(0, 0, 0, 0.4); /* Change color on hover */
+}
 
 /*==================== WEB WORKS ====================*/
 /* Section styling */
