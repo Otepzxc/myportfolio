@@ -209,3 +209,30 @@ $(document).ready(function() {
         }
     });
 });
+
+/*==================== email senting ====================*/ 
+
+function clearForm(event) {
+    event.preventDefault();  // Prevents the default form submission behavior
+
+    const form = document.getElementById("contactForm");
+
+    // Send the form data to the server
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            alert("Message sent successfully!"); // Optionally show success message
+            form.reset(); // Clear the form fields
+        } else {
+            alert("Message failed to send."); // Optionally show error message
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("There was an error sending the message.");
+    });
+}

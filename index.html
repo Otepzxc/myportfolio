@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
 
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -671,33 +674,46 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
+                        <!-- Access key hidden input with name attribute -->
+                        <input type="hidden" name="access_key" value="f2b3dc87-143b-48b4-bc11-584fba0918af">
+                        
                         <div class="contact__inputs grid">
+                            <!-- Name input with name attribute -->
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label for="first_name" class="contact__label">Name</label>
+                                <input type="text" id="first_name" name="first_name" class="contact__input" required>
                             </div>
+                            
+                            <!-- Email input with name attribute -->
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" id="email" name="email" class="contact__input" required>
                             </div>
                         </div>
+                        
+                        <!-- Project input with name attribute -->
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <label for="project" class="contact__label">Project</label>
+                            <input type="text" id="project" name="project" class="contact__input" required>
                         </div>
+                        
+                        <!-- Message textarea with name attribute -->
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="" rows="7" class="contact__input"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea id="message" name="message" cols="30" rows="7" class="contact__input" required></textarea>
                         </div>
-
+                    
+                        <!-- Submit button -->
                         <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
+                            <button type="submit" class="button button--flex">
+                                Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
+                    
+                    
                 </div>
             </section>
         </main>
