@@ -1148,6 +1148,10 @@ button {
 
 .footer__container{
   row-gap: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer__bg{
